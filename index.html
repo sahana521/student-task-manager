@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="school-background-decor" aria-hidden="true">
+        <span class="school-item compass">🧭</span>
+        <span class="school-item ruler">📏</span>
+        <span class="school-item pencil">✏️</span>
+        <span class="school-item flask">🧪</span>
+        <span class="school-item notebook">📓</span>
+        <span class="school-item calculator">📐</span>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="school-icon" aria-hidden="true">🎓</div>
+
+            <h1>Study Quest</h1>
+
+            <p class="motivation">
+                Small steps. Big dreams. ✨
+            </p>
+
+            <div class="xp-box">
+                ⭐ XP: <span id="xp">0</span>
+            </div>
+
+        </div>
+
+
+        <div class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your study quest..."
+            >
+
+            <button onclick="addTask()">
+                ➕ Add Quest
+            </button>
+
+        </div>
+
+
+        <div class="progress-section">
+
+            <div class="progress-text">
+
+                <span>Quest Progress</span>
+
+                <span id="progressText">0%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </div>
+
+
+        <div id="taskList"></div>
+
+
+        <div id="message"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
